@@ -18,8 +18,10 @@
 (^|[[:space:]`(])\.(ddex|company|claude|env)([/[:space:]`)]|$)
 # Internal HTTP endpoints written as call shapes
 \b(GET|POST|PUT|PATCH|DELETE)[[:space:]]+/[a-z0-9{}:_/-]+
-# Database table/column vocabulary
-\b(table|column|schema|migration)[[:space:]]+`?[a-z_]+`?\b
+# Database table/column vocabulary — backticked identifier or snake_case only,
+# so English phrasing like "the table above" does not fire.
+\b(table|column|schema|migration)[[:space:]]+`[a-z_]+`
+\b(table|column|schema)[[:space:]]+[a-z]+_[a-z_]+\b
 \b[a-z]+_(id|name|type|at|by)\b
 # Tenant / workspace / account identifiers in any format
 \b(tenant|workspace|account|customer|org|user)[-_ ]?(id)?[-_ :=#]?[0-9]{1,7}\b
