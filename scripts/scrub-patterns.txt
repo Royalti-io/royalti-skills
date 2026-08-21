@@ -41,8 +41,14 @@
 \bPADPIDA[0-9A-Z]+\b
 # Deal and commercial vocabulary
 \b(commission|revenue share|rev-share|our rate|contract term|MFN|advance|recoup)\b
-# Roster framing — "our artists", "the roster", signed-to language
-\b(our|the) (artists?|roster|catalogue|catalog|label)\b
+# Roster framing — possessive claims over artists/catalogue, and signed-to language.
+# "the catalog" is NOT included: this repo calls itself a catalog constantly, and a
+# pattern that fires on every page gets skimmed.
+\bour (artists?|roster|catalogue|catalog|labels?|releases?)\b
+\bthe (roster|label)\b
+\bsigned to\b
+# Deliberately broad, and left noisy: Rule 2 is the highest-consequence rule, and a
+# roster leak hides exactly here — inside legitimate talk about distribution.
 \bdistributed (to|through|via)\b
 
 # ── Rule 3 · unattributed normative claims ──────────────────────────────────
