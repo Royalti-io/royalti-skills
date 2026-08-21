@@ -1,0 +1,365 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0",
+  "skill": "cwr-registration",
+  "lastUpdated": "2026-08-21",
+  "verifiedAgainstPrimarySources": "2026-08-21",
+  "researchedBy": "Royalti.io",
+  "sources": [
+    {
+      "id": 1,
+      "type": "official_documentation",
+      "title": "CISAC \u2014 Electronic Data Exchange Formats",
+      "url": "https://www.cisac.org/formats",
+      "author": "CISAC",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "WebFetch",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Formats listing",
+          "content": "CWR listed among CISAC exchange formats; access via a member-only 'CWR Document Pack' on members.cisac.org",
+          "relevance": "Establishes CWR as a CISAC format and that the specification is member-gated."
+        }
+      ],
+      "usedInSections": [
+        "What CWR is",
+        "Getting the specification"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "type": "partner_portal",
+      "title": "MusicMark \u2014 CWR Registration: Getting Started",
+      "url": "https://musicmark.com/documents/MusicMark-getting-started.pdf",
+      "author": "MusicMark (ASCAP, BMI, SOCAN)",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl + pdftotext",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "2. The Test Phase",
+          "content": "All publishers wishing to register CWR files with MusicMark are required to complete the test phase; test files no more than 100 works; 1st Acknowledgment within 24-48 hours",
+          "relevance": "The mandatory onboarding sequence."
+        },
+        {
+          "section": "7. First Acknowledgments",
+          "content": "If a file is rejected, all subsequent files are placed on hold until the rejected file is corrected and reposted under the same file name",
+          "relevance": "Queue-blocking failure mode \u2014 the single most operationally important fact in the document."
+        }
+      ],
+      "usedInSections": [
+        "MusicMark: one file, three societies",
+        "The test phase is mandatory",
+        "File naming",
+        "Transmission",
+        "Acknowledgments",
+        "Work IDs and No Participation",
+        "Going live"
+      ],
+      "notes": "Primary source for essentially all process detail in this skill."
+    },
+    {
+      "id": 3,
+      "type": "partner_portal",
+      "title": "MusicMark \u2014 Frequently Asked Questions",
+      "url": "https://musicmark.com/documents/MusicMark-FAQs.pdf",
+      "author": "MusicMark (ASCAP, BMI, SOCAN)",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl + PDF stream extraction",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Q2",
+          "content": "Submit in batches via either Common Works Registration (CWR) or Electronic Batch Registration (EBR); CWR is the industry-standard text format, EBR a simplified spreadsheet (Excel) format",
+          "relevance": "Establishes the two batch routes."
+        }
+      ],
+      "usedInSections": [
+        "Two batch routes: CWR and EBR",
+        "MusicMark: one file, three societies"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 MWN and the Common Works Registration (CWR)",
+      "url": "https://kb.ddex.net/implementing-each-standard/musical-work-data-and-rights-communication-%28mwdr%29/musical-work-right-share-notification-standard-%28mwn%29/mwn-explained/mwn-and-the-common-works-registration-%28cwr%29/",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "MWN and the CWR",
+          "content": "CWR is a CISAC standard whose current operational version is 2.2; a v3.0 gap analysis lists areas CWR does not support (licensing process, Letters of Direction, UGC policy, audio files, lyrics, print rights, UseTypes)",
+          "relevance": "Current version, and a citable statement of what CWR does NOT cover."
+        }
+      ],
+      "usedInSections": [
+        "What CWR is"
+      ],
+      "notes": "The only public source found that states the current operational version and enumerates CWR's gaps."
+    },
+    {
+      "id": 5,
+      "type": "official_documentation",
+      "title": "Common Works Registration User Manual (CWR11-1494)",
+      "url": "https://musicmark.com/documents/cwr11-1494_cwr_user_manual_2011-09-23_e_2011-09-23_en.pdf",
+      "author": "CISAC / STIM (hosted by MusicMark)",
+      "publishedDate": "2011-09-23",
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl + PDF inspection",
+      "confidence": "low",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Document properties",
+          "content": "54 pages; reference CWR11-1494; dated 23/09/2011; covers CWR v2.1",
+          "relevance": "The only substantive public CWR document \u2014 and 15 years old against a current operational version of 2.2."
+        }
+      ],
+      "usedInSections": [
+        "Getting the specification"
+      ],
+      "notes": "Confidence LOW by the gate's own rubric (documentation >2 years old). Cited only for its own existence, provenance and vintage \u2014 NOT relied on for any field-level claim."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "section": "What CWR is",
+      "claim": "CWR is a CISAC electronic data-exchange format giving publishers and societies a standard way to register works.",
+      "sourceId": 1,
+      "locator": "Formats listing \u2014 CWR entry",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c2",
+      "section": "What CWR is",
+      "claim": "CWR's current operational version is 2.2.",
+      "sourceId": 4,
+      "locator": "MWN and the CWR, opening paragraph",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c3",
+      "section": "What CWR is",
+      "claim": "A CWR v3.0 gap analysis records that CWR does not support the musical work licensing process, Letters of Direction, UGC policy communication, audio files relating to a work, lyrics, print-rights information, or UseTypes.",
+      "sourceId": 4,
+      "locator": "MWN and the CWR, gap-analysis list",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c4",
+      "section": "What CWR is",
+      "claim": "MWN was designed for works licensing in territories without central licensing infrastructure such as the US and Canada, and MWN v1.3 added features for registering works with CMOs.",
+      "sourceId": 4,
+      "locator": "MWN and the CWR",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c5",
+      "section": "Getting the specification",
+      "claim": "The CWR specification is not publicly downloadable; CISAC links a member-only document pack and publishers are directed to a CWR representative at ASCAP, BMI or SOCAN.",
+      "sourceId": 1,
+      "locator": "CWR entry \u2014 member portal link",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c6",
+      "section": "Getting the specification",
+      "claim": "The publicly hosted CWR User Manual is document CWR11-1494, 54 pages, dated 23 September 2011, covering v2.1.",
+      "sourceId": 5,
+      "locator": "PDF document properties and title page",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c7",
+      "section": "Two batch routes",
+      "claim": "MusicMark accepts batch registrations via either CWR or EBR (Electronic Batch Registration), a simplified Excel format.",
+      "sourceId": 3,
+      "locator": "FAQ Q2",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c8",
+      "section": "MusicMark",
+      "claim": "MusicMark is an ASCAP/BMI/SOCAN initiative letting publishers submit and receive via one SFTP site rather than three and receive one common first acknowledgment.",
+      "sourceId": 2,
+      "locator": "1. Introduction",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c9",
+      "section": "MusicMark",
+      "claim": "Society codes: 010 ASCAP, 021 BMI, 101 SOCAN, 707 MusicMark.",
+      "sourceId": 2,
+      "locator": "3. File Naming Convention; 8. Additional Acknowledgments",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c10",
+      "section": "Test phase",
+      "claim": "The test phase is mandatory for all publishers wishing to register CWR files with MusicMark; test files must not exceed 100 works; the 1st Acknowledgment is generated within 24-48 hours.",
+      "sourceId": 2,
+      "locator": "2. The Test Phase: An Overview; 6. What to include in your test files",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c11",
+      "section": "Test phase",
+      "claim": "MusicMark asks test files to include works with foreign parties, foreign writers collecting over 100% of the writing share, chain of title, co-publishing, administration and sub-publishing agreements.",
+      "sourceId": 2,
+      "locator": "6. What to include in your test files",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c12",
+      "section": "File naming",
+      "claim": "The file naming convention is CWyynnnnsss_707.Vxx and files that do not follow it are rejected.",
+      "sourceId": 2,
+      "locator": "3. File Naming Convention",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c13",
+      "section": "Transmission",
+      "claim": "Test SFTP is sftp://qaftp.musicmark.com and production is sftp://ftp.musicmark.com, port 22, with different credentials for each.",
+      "sourceId": 2,
+      "locator": "4. Accessing the SFTP Site; 11. Going Live",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c14",
+      "section": "Acknowledgments",
+      "claim": "The 1st Acknowledgment header indicates 707MUSICMARK, the file name indicates 707, and work ID numbers are not included.",
+      "sourceId": 2,
+      "locator": "7. First Acknowledgments",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c15",
+      "section": "Acknowledgments",
+      "claim": "If a file is rejected, all subsequent files are held until the rejected file is corrected and reposted under the same file name; held files then process in the order received.",
+      "sourceId": 2,
+      "locator": "7. First Acknowledgments, note",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c16",
+      "section": "Acknowledgments",
+      "claim": "ASCAP and BMI generate subsequent 2nd acknowledgments whenever a work record update is made.",
+      "sourceId": 2,
+      "locator": "8. Additional Acknowledgments, table",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c17",
+      "section": "Work IDs",
+      "claim": "ASCAP and BMI assign work IDs when the transaction record includes the territory of the US; SOCAN when it includes Canada; all three when it includes both.",
+      "sourceId": 2,
+      "locator": "9. Acknowledgement Information from Societies \u2014 Work ID#s",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c18",
+      "section": "Work IDs",
+      "claim": "An NP in the MusicMark 1st acknowledgment means the title is not intended for US and/or Canadian registration; an NP in a PRO's 2nd acknowledgment still generates a work ID but means the title is not intended for licensing by that PRO.",
+      "sourceId": 2,
+      "locator": "9. Acknowledgement Information from Societies \u2014 No Participation",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c19",
+      "section": "Going live",
+      "claim": "On approval the publisher receives separate production SFTP credentials; the upload, notification and acknowledgment process is otherwise unchanged.",
+      "sourceId": 2,
+      "locator": "11. Going Live",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    }
+  ],
+  "sourceTypes": {
+    "official_documentation": "Official documentation, standards bodies",
+    "partner_portal": "Operator-published partner documentation",
+    "ddex_kb": "DDEX Knowledge Base"
+  },
+  "confidenceLevels": {
+    "high": "Official sources, standards bodies, operator-published documentation",
+    "medium": "Reputable industry publications",
+    "low": "Outdated documentation (>2 years) or unverified sources"
+  },
+  "checkStatuses": {
+    "verified": "HTTP 200 to an automated check on accessedDate"
+  },
+  "scopeGaps": [
+    {
+      "topic": "CWR record types and field-level structure",
+      "reason": "The current functional specification (v2.2) is member-gated. The only public document covers v2.1 and is from 2011 \u2014 low confidence under this repo's own rubric. Cut under cite-or-cut."
+    },
+    {
+      "topic": "Publisher and writer share mechanics",
+      "reason": "No public primary source found. Not drafted."
+    },
+    {
+      "topic": "Routes outside North America (PRS, SESAC, ICE)",
+      "reason": "Not researched. ice-services.com did not resolve during the source pass. Absence here is not a claim that CWR is unavailable via those routes."
+    },
+    {
+      "topic": "Mechanical rights registration route",
+      "reason": "CWR is used with mechanical rights societies, but that route was not researched."
+    }
+  ],
+  "verificationPass": {
+    "date": "2026-08-21",
+    "method": "Each claim traced to a located section of its cited source; process detail read directly from the primary PDFs via pdftotext rather than from search summaries.",
+    "runBy": "Claude (Claude Code session)",
+    "independent": false,
+    "caveat": "Claude authored this skill and traced the claims. ACCURACY-GATE.md requires an independent verifier; founder sign-off is outstanding."
+  },
+  "summary": {
+    "totalSources": 5,
+    "totalClaims": 19,
+    "byConfidence": {
+      "high": 4,
+      "low": 1
+    },
+    "byVerdict": {
+      "confirmed": 19
+    }
+  }
+}

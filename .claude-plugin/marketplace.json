@@ -35,6 +35,30 @@
       ]
     },
     {
+      "name": "cwr-registration",
+      "description": "How publishers register musical works with PROs via Common Works Registration \u2014 the MusicMark route to ASCAP, BMI and SOCAN, the mandatory test phase, file naming, SFTP endpoints, acknowledgment status codes, and territory-driven work ID assignment.",
+      "category": "music-industry",
+      "keywords": [
+        "cwr",
+        "musicmark",
+        "ascap",
+        "bmi",
+        "socan",
+        "pro",
+        "publishing",
+        "works registration",
+        "ebr"
+      ],
+      "license": "Apache-2.0",
+      "author": "Royalti.io",
+      "homepage": "https://github.com/Royalti-io/royalti-skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/cwr-registration"
+      ]
+    },
+    {
       "name": "royalti-api",
       "description": "Royalti.io REST API v2.6 developer reference. Authentication, CRUD patterns, pagination, error handling, webhooks, WebSocket events, and data models.",
       "category": "music-industry",
