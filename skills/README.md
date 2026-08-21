@@ -49,6 +49,10 @@ a field means, where a submission goes.
 the specifications themselves. The practical limit is citability: a subject with no primary
 sources we can point at cannot be published here under the accuracy gate, however well we know it.
 
+## Published
+
+- `ddex-sources` — primary-source index for music delivery. Link-checked 2026-08-21.
+
 ## In preparation
 
 - `ddex-delivery` — ERN message structure, release profiles, provider delivery requirements

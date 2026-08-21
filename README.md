@@ -23,9 +23,10 @@ to publish and they are useless to us kept private.
 
 | Skill | What it covers | License |
 |---|---|---|
+| [`ddex-sources`](skills/ddex-sources/) | Primary-source index for music delivery — the ten DDEX standards, plus DSP, aggregator and regional-platform documentation. Link-checked. | Apache-2.0 |
 | [`royalti-api`](https://github.com/Royalti-io/royalti-api-skill) | Royalti.io REST API v2.6 — auth, CRUD, pagination, webhooks, WebSocket events | MIT |
 
-_DDEX delivery and publishing/CWR skills are in preparation._
+_A fuller `ddex-delivery` skill and a publishing/CWR skill are in preparation._
 
 **This catalog is mixed-license.** Skills in this repository are Apache-2.0. `royalti-api`
 lives in its own repository under MIT and is listed here rather than absorbed. The table above

@@ -5,15 +5,46 @@
     "url": "https://royalti.io"
   },
   "metadata": {
-    "description": "Free, cited music-industry skills — DDEX delivery, publishing and rights administration — for Claude Code and any Agent Skills compatible tool.",
+    "description": "Free, cited music-industry skills \u2014 DDEX delivery, publishing and rights administration \u2014 for Claude Code and any Agent Skills compatible tool.",
     "version": "0.1.0"
   },
   "plugins": [
     {
+      "name": "ddex-sources",
+      "description": "Curated, link-checked index of primary sources for music delivery \u2014 the ten DDEX standards plus official metadata and onboarding documentation for major DSPs, aggregators and regional platforms.",
+      "category": "music-industry",
+      "keywords": [
+        "ddex",
+        "ern",
+        "mead",
+        "pie",
+        "dsr",
+        "mwdr",
+        "delivery",
+        "metadata",
+        "dsp",
+        "music"
+      ],
+      "license": "Apache-2.0",
+      "author": "Royalti.io",
+      "homepage": "https://github.com/Royalti-io/royalti-skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ddex-sources"
+      ]
+    },
+    {
       "name": "royalti-api",
       "description": "Royalti.io REST API v2.6 developer reference. Authentication, CRUD patterns, pagination, error handling, webhooks, WebSocket events, and data models.",
       "category": "music-industry",
-      "keywords": ["api", "rest", "royalti", "music", "rights"],
+      "keywords": [
+        "api",
+        "rest",
+        "royalti",
+        "music",
+        "rights"
+      ],
       "license": "MIT",
       "author": "Royalti.io",
       "homepage": "https://github.com/Royalti-io/royalti-api-skill",
@@ -23,7 +54,9 @@
         "url": "https://github.com/Royalti-io/royalti-api-skill.git",
         "ref": "main"
       },
-      "skills": ["./skills/royalti-api"]
+      "skills": [
+        "./skills/royalti-api"
+      ]
     }
   ]
 }

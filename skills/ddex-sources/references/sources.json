@@ -1,0 +1,703 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0",
+  "skill": "ddex-sources",
+  "lastUpdated": "2026-08-21",
+  "verifiedAgainstPrimarySources": "2026-08-21",
+  "researchedBy": "Royalti.io",
+  "sources": [
+    {
+      "id": 1,
+      "type": "ddex_kb",
+      "title": "DDEX Knowledge Base",
+      "url": "https://kb.ddex.net",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "type": "official_documentation",
+      "title": "DDEX",
+      "url": "https://ddex.net",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 Implementing each standard (index)",
+      "url": "https://kb.ddex.net/implementing-each-standard/",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 ERN \u2014 Electronic Release Notification",
+      "url": "https://kb.ddex.net/implementing-each-standard/electronic-release-notification-message-suite-%28ern%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 MEAD \u2014 Media Enrichment and Description",
+      "url": "https://kb.ddex.net/implementing-each-standard/media-enrichment-and-description-%28mead%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 PIE \u2014 Party Identification and Enrichment",
+      "url": "https://kb.ddex.net/implementing-each-standard/party-identification-and-enrichment-%28pie%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 DSR \u2014 Digital Sales Reporting",
+      "url": "https://kb.ddex.net/implementing-each-standard/digital-sales-reporting-message-suite-%28dsr%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 MWDR \u2014 Musical Work Data and Rights Communication",
+      "url": "https://kb.ddex.net/implementing-each-standard/musical-work-data-and-rights-communication-%28mwdr%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 RDR \u2014 Recording Data and Rights Standards",
+      "url": "https://kb.ddex.net/implementing-each-standard/recording-data-and-rights-standards-%28rdr%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 CDM \u2014 Claim Detail Message Suite",
+      "url": "https://kb.ddex.net/implementing-each-standard/claim-detail-message-suite-%28cdm%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 LRAW \u2014 Links Between Resources and Musical Works",
+      "url": "https://kb.ddex.net/implementing-each-standard/links-between-resources-and-musical-works-%28lraw%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 RIN \u2014 Recording Information Notification",
+      "url": "https://kb.ddex.net/implementing-each-standard/recording-information-notification-%28rin%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 13,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 AR \u2014 Anomaly Reporting",
+      "url": "https://kb.ddex.net/implementing-each-standard/anomaly-reporting-%28ar%29",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 14,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 Best practices for all DDEX standards",
+      "url": "https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 15,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 Best practices for catalogue transfers",
+      "url": "https://kb.ddex.net/implementing-each-standard/best-practices-for-catalogue-transfers",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "DDEX standards"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 16,
+      "type": "official_documentation",
+      "title": "Spotify \u2014 Style guide",
+      "url": "https://artists.spotify.com/help/article/style-guide",
+      "author": "Spotify",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": "Replaces a truncated PDF link in the source material this index was built from."
+    },
+    {
+      "id": 17,
+      "type": "official_documentation",
+      "title": "Spotify \u2014 Metadata style guide",
+      "url": "https://support.spotify.com/us/artists/article/metadata-style-guide/",
+      "author": "Spotify",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": "Replaces a truncated PDF link in the source material."
+    },
+    {
+      "id": 18,
+      "type": "official_documentation",
+      "title": "Apple Music \u2014 Music specification",
+      "url": "https://help.apple.com/itc/musicspec/en.lproj/static.html",
+      "author": "Apple",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 19,
+      "type": "official_documentation",
+      "title": "Apple Music \u2014 Style guide",
+      "url": "https://help.apple.com/itc/musicstyleguide/en.lproj/static.html",
+      "author": "Apple",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 20,
+      "type": "official_documentation",
+      "title": "Apple Music \u2014 Provider support",
+      "url": "https://itunespartner.apple.com/music/",
+      "author": "Apple",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 21,
+      "type": "official_documentation",
+      "title": "YouTube \u2014 Artist hub",
+      "url": "https://artists.youtube.com",
+      "author": "YouTube",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 22,
+      "type": "official_documentation",
+      "title": "Amazon Music for Artists",
+      "url": "https://artists.amazonmusic.com",
+      "author": "Amazon",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": "Repaired: the source material's developer.amazon.com/music link returns 404."
+    },
+    {
+      "id": 23,
+      "type": "official_documentation",
+      "title": "Tidal \u2014 Artist portal",
+      "url": "https://artists.tidal.com",
+      "author": "Tidal",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "blocked-to-automated-checks",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": "HTTP 403 to an automated request; not confirmed in a browser."
+    },
+    {
+      "id": 24,
+      "type": "official_documentation",
+      "title": "Deezer \u2014 Developer portal",
+      "url": "https://developers.deezer.com",
+      "author": "Deezer",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 25,
+      "type": "official_documentation",
+      "title": "Pandora \u2014 Artist Marketing Platform",
+      "url": "https://amp.pandora.com",
+      "author": "Pandora",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 26,
+      "type": "official_documentation",
+      "title": "SoundCloud for Artists",
+      "url": "https://artists.soundcloud.com",
+      "author": "SoundCloud",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": "Repaired: the source material's soundcloud.com/for-artists link returns 404."
+    },
+    {
+      "id": 27,
+      "type": "official_documentation",
+      "title": "Tencent Music \u2014 QQ Music open platform",
+      "url": "https://open.y.qq.com",
+      "author": "Tencent Music",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 28,
+      "type": "official_documentation",
+      "title": "NetEase Cloud Music",
+      "url": "https://music.163.com",
+      "author": "NetEase",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 29,
+      "type": "official_documentation",
+      "title": "JioSaavn",
+      "url": "https://www.jiosaavn.com",
+      "author": "JioSaavn",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": "Repaired: the source material's /artists path redirects to root."
+    },
+    {
+      "id": 30,
+      "type": "official_documentation",
+      "title": "Anghami \u2014 Artist portal",
+      "url": "https://artists.anghami.com",
+      "author": "Anghami",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "blocked-to-automated-checks",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Digital service providers"
+      ],
+      "notes": "HTTP 406 to an automated request; not confirmed in a browser."
+    },
+    {
+      "id": 31,
+      "type": "partner_portal",
+      "title": "FUGA \u2014 Knowledge base",
+      "url": "https://support.fuga.com/hc/en-us",
+      "author": "FUGA",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "blocked-to-automated-checks",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Aggregators and distributors"
+      ],
+      "notes": "HTTP 403 to an automated request; not confirmed in a browser."
+    },
+    {
+      "id": 32,
+      "type": "partner_portal",
+      "title": "FUGA \u2014 Webhooks user guide",
+      "url": "https://support.fuga.com/hc/en-us/articles/28485420930324-FUGA-Webhooks-User-Guide",
+      "author": "FUGA",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "blocked-to-automated-checks",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Aggregators and distributors"
+      ],
+      "notes": "HTTP 403 to an automated request."
+    },
+    {
+      "id": 33,
+      "type": "partner_portal",
+      "title": "FUGA \u2014 Spotify content policy guidelines",
+      "url": "https://support.fuga.com/hc/en-us/articles/30023468817300-Spotify-Content-Policy-Guidelines",
+      "author": "FUGA",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "blocked-to-automated-checks",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Aggregators and distributors"
+      ],
+      "notes": "HTTP 403 to an automated request."
+    },
+    {
+      "id": 34,
+      "type": "partner_portal",
+      "title": "The Orchard",
+      "url": "https://theorchard.com",
+      "author": "The Orchard",
+      "publishedDate": null,
+      "accessedDate": "2026-08-21",
+      "toolUsed": "curl (HTTP status check)",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Aggregators and distributors"
+      ],
+      "notes": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "section": "DDEX standards",
+      "claim": "DDEX publishes ERN, MEAD, PIE, DSR, MWDR, RDR, CDM, LRAW, RIN and AR as separate standards, indexed at kb.ddex.net/implementing-each-standard/.",
+      "sourceId": 3,
+      "locator": "Implementing each standard \u2014 index listing",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c2",
+      "section": "DDEX standards",
+      "claim": "DSR is the standard covering sales and usage reporting from DSP back to rights holder.",
+      "sourceId": 7,
+      "locator": "Digital Sales Reporting Message Suite (DSR)",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c3",
+      "section": "DDEX standards",
+      "claim": "MWDR is the standard covering musical work data and rights communication \u2014 the composition rather than the recording.",
+      "sourceId": 8,
+      "locator": "Musical Work Data and Rights Communication (MWDR)",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c4",
+      "section": "DDEX standards",
+      "claim": "LRAW covers the link between a recording resource and its underlying musical work.",
+      "sourceId": 11,
+      "locator": "Links Between Resources and Musical Works (LRAW)",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c5",
+      "section": "Link status",
+      "claim": "Four links in the source material were broken (Amazon developer portal, SoundCloud for-artists, DDEX MEAD path, DDEX PIE path) and two Spotify PDF links had truncated paths.",
+      "sourceId": null,
+      "locator": "HTTP status check run 2026-08-21; results recorded per source in checkStatus",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed"
+    }
+  ],
+  "sourceTypes": {
+    "official_documentation": "Official provider documentation, guides, specifications",
+    "ddex_kb": "DDEX Knowledge Base documentation",
+    "partner_portal": "Partner/distributor portal resources"
+  },
+  "confidenceLevels": {
+    "high": "Official sources, standards bodies, provider-operated documentation",
+    "medium": "Reputable industry publications, verified distributors",
+    "low": "Unverified sources, user forums, outdated docs (>2 years)"
+  },
+  "checkStatuses": {
+    "verified": "HTTP 200 to an automated check on accessedDate",
+    "blocked-to-automated-checks": "HTTP 403/406 \u2014 bot protection. NOT evidence the page is gone, and NOT confirmed working: we did not check it in a browser.",
+    "unverified": "Could not be checked from our environment; omitted from the skill rather than listed as working."
+  },
+  "omitted": [
+    {
+      "title": "Believe",
+      "url": "https://believemusic.com",
+      "reason": "TLS SNI failure against an IPv6-only host; unverifiable from our environment. Omitted rather than published as working.",
+      "checkedOn": "2026-08-21"
+    }
+  ],
+  "summary": {
+    "totalSources": 34,
+    "byCheckStatus": {
+      "verified": 29,
+      "blocked-to-automated-checks": 5
+    },
+    "byConfidence": {
+      "high": 34
+    },
+    "totalClaims": 5
+  }
+}
