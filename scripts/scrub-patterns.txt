@@ -1,0 +1,57 @@
+#
+# Marker classes for the mechanical half of SCRUB-CHECKLIST.md.
+# One extended-regex per line. `#` comments and blank lines ignored.
+#
+# THIS FILE IS PUBLIC. It lists *shapes to look for*, never confidential values.
+# Never add an artist name, a partner account ID, a credential, or a customer
+# identifier here — that publishes the very thing the scan exists to catch.
+#
+# Add a pattern whenever a human review catches something the scan missed.
+# The scan's job is to stop the same leak twice.
+
+# ── Rule 1 · internal operations detail ─────────────────────────────────────
+# Private repo and project names appearing as paths or working directories
+(^|[^a-z])royalti-(co|server|client|pa|mcp|agents|video-engine|io-website)([^a-z]|$)
+# Source-tree paths that only resolve inside a private codebase
+(^|[[:space:]`(])(src|lib|tasks|scripts)/[a-z0-9._/-]+\.(ts|js|tsx|py|rb|go|sql)
+# Private dotfile directories used as working state
+(^|[[:space:]`(])\.(ddex|company|claude|env)([/[:space:]`)]|$)
+# Internal HTTP endpoints written as call shapes
+\b(GET|POST|PUT|PATCH|DELETE)[[:space:]]+/[a-z0-9{}:_/-]+
+# Database table/column vocabulary
+\b(table|column|schema|migration)[[:space:]]+`?[a-z_]+`?\b
+\b[a-z]+_(id|name|type|at|by)\b
+# Tenant / workspace / account identifiers in any format
+\b(tenant|workspace|account|customer|org|user)[-_ ]?(id)?[-_ :=#]?[0-9]{1,7}\b
+# Bare UUIDs and truncated UUIDs
+\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b
+\b[0-9a-f]{8}…
+# Credential vocabulary — including statements about where secrets are NOT kept
+\b(api[ _-]?key|access[ _-]?token|bearer|password|credential|secret|\.env)\b
+# Localhost / private-network hosts
+\b(localhost|127\.0\.0\.1|0\.0\.0\.0|10\.[0-9]+\.|192\.168\.)
+
+# ── Rule 2 · partner-confidential and roster material ───────────────────────
+# Group companies and partner names — a hit is not automatically a failure,
+# but every occurrence must be justified as generic industry reference.
+(^|[^a-z])(dixtrit|fuga|merlin|revelator|labelgrid|sentric)([^a-z]|$)
+# DDEX party / aggregator identifiers
+\bPADPIDA[0-9A-Z]+\b
+# Deal and commercial vocabulary
+\b(commission|revenue share|rev-share|our rate|contract term|MFN|advance|recoup)\b
+# Roster framing — "our artists", "the roster", signed-to language
+\b(our|the) (artists?|roster|catalogue|catalog|label)\b
+\bdistributed (to|through|via)\b
+
+# ── Rule 3 · unattributed normative claims ──────────────────────────────────
+# Hedges sitting next to normative verbs — an uncited claim wearing a hat
+\b(generally|typically|usually|normally|in most cases|as a rule)\b.*\b(must|required|shall|need to|has to)\b
+\b(must|required|shall)\b.*\b(generally|typically|usually|probably|I think|afaik)\b
+# First-person experience offered as authority
+\b(in my experience|we[' ]?ve found|from what I|I know that)\b
+
+# ── Rule 4 · product-capability claims ──────────────────────────────────────
+\b(we|royalti|the platform) (supports?|handles?|provides?|offers?)\b
+\b(coming soon|on the roadmap|planned|in beta|will support|not yet supported)\b
+# Comparison-table framing — a capability claim by construction
+\|[[:space:]]*Royalti[[:space:]]*\|

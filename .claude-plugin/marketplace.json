@@ -1,0 +1,29 @@
+{
+  "name": "royalti-skills",
+  "owner": {
+    "name": "Royalti.io",
+    "url": "https://royalti.io"
+  },
+  "metadata": {
+    "description": "Free, cited music-industry skills — DDEX delivery, publishing and rights administration — for Claude Code and any Agent Skills compatible tool.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "royalti-api",
+      "description": "Royalti.io REST API v2.6 developer reference. Authentication, CRUD patterns, pagination, error handling, webhooks, WebSocket events, and data models.",
+      "category": "music-industry",
+      "keywords": ["api", "rest", "royalti", "music", "rights"],
+      "license": "MIT",
+      "author": "Royalti.io",
+      "homepage": "https://github.com/Royalti-io/royalti-api-skill",
+      "repository": "https://github.com/Royalti-io/royalti-api-skill",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Royalti-io/royalti-api-skill.git",
+        "ref": "main"
+      },
+      "skills": ["./skills/royalti-api"]
+    }
+  ]
+}
