@@ -621,49 +621,124 @@
   ],
   "claims": [
     {
-      "id": "c1",
+      "id": "c0",
       "section": "DDEX standards",
       "claim": "DDEX publishes ERN, MEAD, PIE, DSR, MWDR, RDR, CDM, LRAW, RIN and AR as separate standards, indexed at kb.ddex.net/implementing-each-standard/.",
       "sourceId": 3,
-      "locator": "Implementing each standard \u2014 index listing",
+      "locator": "Standards index listing",
       "verifiedOn": "2026-08-21",
-      "verdict": "confirmed"
+      "verdict": "confirmed",
+      "verificationNote": ""
+    },
+    {
+      "id": "c1",
+      "section": "DDEX standards",
+      "claim": "ERN covers: Releases and resources, and the terms and conditions under which a DSP may make them available to consumers",
+      "sourceId": 4,
+      "locator": "ERN overview paragraph",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed",
+      "verificationNote": ""
     },
     {
       "id": "c2",
       "section": "DDEX standards",
-      "claim": "DSR is the standard covering sales and usage reporting from DSP back to rights holder.",
-      "sourceId": 7,
-      "locator": "Digital Sales Reporting Message Suite (DSR)",
+      "claim": "MEAD covers: Rich supplementary metadata about parties, releases, resources and musical works \u2014 supplements the core supply-chain and rights data carried by ERN",
+      "sourceId": 5,
+      "locator": "MEAD overview paragraph",
       "verifiedOn": "2026-08-21",
-      "verdict": "confirmed"
+      "verdict": "confirmed-after-correction",
+      "verificationNote": "Original draft said 'editorial and marketing metadata beyond the release' and gave examples (moods, themes, focus tracks) not supported by the source. Examples cut; scope corrected \u2014 MEAD covers parties as well as content."
     },
     {
       "id": "c3",
       "section": "DDEX standards",
-      "claim": "MWDR is the standard covering musical work data and rights communication \u2014 the composition rather than the recording.",
-      "sourceId": 8,
-      "locator": "Musical Work Data and Rights Communication (MWDR)",
+      "claim": "PIE covers: Rich information about Parties. Same role as MEAD, but PIE focuses on parties where MEAD focuses on content",
+      "sourceId": 6,
+      "locator": "PIE overview paragraph",
       "verifiedOn": "2026-08-21",
-      "verdict": "confirmed"
+      "verdict": "confirmed-after-correction",
+      "verificationNote": "Original draft claimed 'images, biography' \u2014 not stated in the source. Cut under cite-or-cut."
     },
     {
       "id": "c4",
       "section": "DDEX standards",
-      "claim": "LRAW covers the link between a recording resource and its underlying musical work.",
-      "sourceId": 11,
-      "locator": "Links Between Resources and Musical Works (LRAW)",
+      "claim": "DSR covers: Sales and usage reports created by licensees (the digital services) and sent to licensors (the rights owners of works, recordings and videos). Flat-file; it replaced an XML-formatted report",
+      "sourceId": 7,
+      "locator": "DSR overview paragraph",
       "verifiedOn": "2026-08-21",
-      "verdict": "confirmed"
+      "verdict": "confirmed",
+      "verificationNote": "Flat-file-replaced-XML detail added from the source \u2014 materially useful and was missing."
     },
     {
       "id": "c5",
-      "section": "Link status",
-      "claim": "Four links in the source material were broken (Amazon developer portal, SoundCloud for-artists, DDEX MEAD path, DDEX PIE path) and two Spotify PDF links had truncated paths.",
-      "sourceId": null,
-      "locator": "HTTP status check run 2026-08-21; results recorded per source in checkStatus",
+      "section": "DDEX standards",
+      "claim": "MWDR covers: Obtaining licences for the mechanical right in musical works, for companies based in the US. Formerly the Works Notification and Licensing Standards",
+      "sourceId": 8,
+      "locator": "MWDR overview paragraph",
       "verifiedOn": "2026-08-21",
-      "verdict": "confirmed"
+      "verdict": "refuted-and-rewritten",
+      "verificationNote": "REFUTED. The draft described MWDR as general publishing-side work data \u2014 'musical works, writers, publishers, shares; the composition, not the recording'. The source scopes it to the mechanical right AND to US-based companies. Both scopes were dropped. This is the true-but-overgeneralised failure mode, on a standard the skill specifically highlights."
+    },
+    {
+      "id": "c6",
+      "section": "DDEX standards",
+      "claim": "RDR covers: Data exchanged between music licensing companies, record companies and performer representatives \u2014 sound recordings, music videos, and the sales and usage data underpinning royalty calculation across territories",
+      "sourceId": 9,
+      "locator": "RDR overview paragraph",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed-after-correction",
+      "verificationNote": "Draft said 'recording-side rights and ownership data' and used the term 'neighbouring rights', which the source does not. Term cut; the sales/usage-data half, which the draft omitted entirely, added."
+    },
+    {
+      "id": "c7",
+      "section": "DDEX standards",
+      "claim": "CDM covers: Claims in musical works and the invoice calculations relating to them, exchanged between works rights owners or licensors and DSPs \u2014 plus a way for DSPs to flag discrepancies",
+      "sourceId": 10,
+      "locator": "CDM overview paragraph",
+      "verifiedOn": "2026-08-21",
+      "verdict": "refuted-and-rewritten",
+      "verificationNote": "REFUTED. Draft said 'claims against usage' \u2014 vague, omitted that CDM is musical-works-specific, and dropped invoice calculations entirely."
+    },
+    {
+      "id": "c8",
+      "section": "DDEX standards",
+      "claim": "LRAW covers: Communicating a link you have already established between a sound or video recording and the musical work(s) it embodies \u2014 including the negative case, that a work is *not* embodied",
+      "sourceId": 11,
+      "locator": "LRAW overview paragraph",
+      "verifiedOn": "2026-08-21",
+      "verdict": "refuted-and-rewritten",
+      "verificationNote": "REFUTED. Draft said 'matching an ISRC to its underlying composition', implying LRAW performs the match. It does not \u2014 it notifies partners of a link already established. The negative assertion and video recordings were both omitted."
+    },
+    {
+      "id": "c9",
+      "section": "DDEX standards",
+      "claim": "RIN covers: Metadata captured at the point of recording \u2014 designed to be integrated into studio equipment and software including DAWs, then communicated onward with the audio",
+      "sourceId": 12,
+      "locator": "RIN overview paragraph",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed",
+      "verificationNote": "DAW-integration detail added; it is the distinctive part."
+    },
+    {
+      "id": "c10",
+      "section": "DDEX standards",
+      "claim": "AR covers: Anomalous consumer engagement with a release, resource, work or artist \u2014 which may or may not be fraudulent \u2014 and a message for a partner to respond. Delivery anomalies are *not* covered yet",
+      "sourceId": 13,
+      "locator": "AR overview paragraph",
+      "verifiedOn": "2026-08-21",
+      "verdict": "refuted-and-rewritten",
+      "verificationNote": "REFUTED, and the most serious of the set. Draft said 'reporting problems back upstream / a partner needs structured notice that data is wrong'. AR is about anomalous consumer engagement \u2014 streaming fraud \u2014 not data errors. The source states delivery-anomaly reporting 'will be added at a later stage', so the draft described the part that does not exist yet."
+    },
+    {
+      "id": "c11",
+      "section": "Verification / links",
+      "claim": "Six links in the source material this index was built from were wrong: Amazon developer portal, SoundCloud for-artists, DDEX MEAD path and DDEX PIE path returned 404; two Spotify PDF links had truncated paths.",
+      "sourceId": null,
+      "locator": "HTTP status check run 2026-08-21; per-source results in checkStatus",
+      "verifiedOn": "2026-08-21",
+      "verdict": "confirmed",
+      "verificationNote": ""
     }
   ],
   "sourceTypes": {
@@ -698,6 +773,23 @@
     "byConfidence": {
       "high": 34
     },
-    "totalClaims": 5
+    "totalClaims": 12,
+    "byVerdict": {
+      "confirmed": 5,
+      "confirmed-after-correction": 3,
+      "refuted-and-rewritten": 4
+    }
+  },
+  "verdicts": {
+    "confirmed": "Checked against the source and stands as written.",
+    "confirmed-after-correction": "The substance held but the draft was loose or incomplete; corrected before publication. See verificationNote.",
+    "refuted-and-rewritten": "The draft was materially wrong. Rewritten from the source. See verificationNote for what it said and why it failed."
+  },
+  "verificationPass": {
+    "date": "2026-08-21",
+    "method": "Refute-by-default against each standard's own overview text, fetched live.",
+    "runBy": "Claude (Claude Code session)",
+    "independent": false,
+    "caveat": "Claude authored this skill and ran this pass. ACCURACY-GATE.md requires an independent verifier; a founder sign-off is still outstanding. The refutations found are recorded in full so the pass can be audited rather than trusted."
   }
 }
