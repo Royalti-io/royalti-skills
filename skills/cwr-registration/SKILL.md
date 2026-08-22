@@ -14,6 +14,9 @@ available, and this catalog does not publish claims it cannot cite. See
 [Getting the specification](#getting-the-specification).
 
 **Verified against primary sources: 2026-08-21.**
+**Reviewed and signed off: 2026-08-22** — Chinedum Okerengwor, Royalti.io. Scrub
+checklist and accuracy gate both PASS; see
+[`references/sources.json`](references/sources.json) for the per-claim record.
 
 ---
 

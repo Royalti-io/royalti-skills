@@ -791,5 +791,16 @@
     "runBy": "Claude (Claude Code session)",
     "independent": false,
     "caveat": "Claude authored this skill and ran this pass. ACCURACY-GATE.md requires an independent verifier; a founder sign-off is still outstanding. The refutations found are recorded in full so the pass can be audited rather than trusted."
+  },
+  "signOff": {
+    "reviewer": "Chinedum Okerengwor",
+    "role": "Founder, Royalti.io",
+    "date": "2026-08-22",
+    "scrubChecklist": "PASS",
+    "accuracyGate": "PASS",
+    "basis": "Reviewed against the recorded verification pass and the per-claim provenance in this file.",
+    "notedLimitation": "The verification pass recorded under verificationPass was run by Claude, which also authored the skill (independent: false). The reviewer signed off with that limitation on the record rather than after an independent third-party pass.",
+    "scrubNote": "4 marker hits reviewed \u2014 all FUGA public knowledge-base URLs, retained as cited sources",
+    "accuracyNote": "10 DDEX standard descriptions verified: 3 confirmed, 3 corrected, 4 refuted and rewritten. Refutations retained in claims[] rather than removed."
   }
 }
