@@ -53,6 +53,20 @@ Works with Claude Code, Cursor, OpenAI Codex CLI, and anything else that reads t
 
 Once installed, a skill activates automatically when your conversation involves its subject.
 
+### Which path installs what
+
+The two paths do not cover the same entries, so pick by what you want:
+
+| | Plugin marketplace | `npx skills add` |
+|---|---|---|
+| `ddex-sources` | ✅ | ✅ |
+| `cwr-registration` | ✅ | ✅ |
+| `royalti-api` | ✅ | ❌ — install it [from its own repo](https://github.com/Royalti-io/royalti-api-skill) |
+
+`royalti-api` lives in a separate repository. The marketplace manifest can point at it; the
+skills CLI reads this repository's `skills/` directory and so does not pick it up. Verified by
+installing, not assumed.
+
 ## What these skills are not
 
 - **Not a product manual.** Except for `royalti-api`, nothing here describes what Royalti
