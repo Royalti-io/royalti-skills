@@ -23,6 +23,7 @@ to publish and they are useless to us kept private.
 
 | Skill | What it covers | License |
 |---|---|---|
+| [`royalti-app`](skills/royalti-app/) | Task router for the Royalti.io app — 46 help articles regrouped by what you are trying to do. | Apache-2.0 |
 | [`ddex-delivery`](skills/ddex-delivery/) | Problem router for DDEX delivery — 209 real failure modes mapped to the DDEX guidance article that answers each. | Apache-2.0 |
 | [`ddex-sources`](skills/ddex-sources/) | Primary-source index for music delivery — the ten DDEX standards, plus DSP, aggregator and regional-platform documentation. Link-checked. | Apache-2.0 |
 | [`cwr-registration`](skills/cwr-registration/) | Registering works with PROs via CWR — the MusicMark route to ASCAP, BMI and SOCAN: test phase, file naming, SFTP, acknowledgment codes, work IDs. | Apache-2.0 |
@@ -60,6 +61,7 @@ The two paths do not cover the same entries, so pick by what you want:
 
 | | Plugin marketplace | `npx skills add` |
 |---|---|---|
+| `royalti-app` | ✅ | ✅ |
 | `ddex-delivery` | ✅ | ✅ |
 | `ddex-sources` | ✅ | ✅ |
 | `cwr-registration` | ✅ | ✅ |

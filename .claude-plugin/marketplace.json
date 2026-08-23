@@ -10,6 +10,28 @@
   },
   "plugins": [
     {
+      "name": "royalti-app",
+      "description": "Task router for the Royalti.io web app \u2014 maps what you are trying to do to the help article that covers it. 46 articles regrouped by task: catalog, splits, royalty imports, accounting, publishing, delivery, analytics, Ask Roy.",
+      "category": "music-industry",
+      "keywords": [
+        "royalti",
+        "catalog",
+        "splits",
+        "royalties",
+        "publishing",
+        "help",
+        "workspace"
+      ],
+      "license": "Apache-2.0",
+      "author": "Royalti.io",
+      "homepage": "https://github.com/Royalti-io/royalti-skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/royalti-app"
+      ]
+    },
+    {
       "name": "ddex-delivery",
       "description": "Problem-to-guidance router for DDEX delivery \u2014 maps 209 real delivery problems (dropped deals, territorial takedowns, malformed identifiers, miscredited artists, parse failures) to the exact DDEX knowledge-base article that answers each.",
       "category": "music-industry",

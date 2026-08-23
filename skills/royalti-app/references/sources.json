@@ -1,0 +1,407 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0",
+  "skill": "royalti-app",
+  "lastUpdated": "2026-08-23",
+  "verifiedAgainstPrimarySources": "2026-08-23",
+  "researchedBy": "Royalti.io",
+  "sources": [
+    {
+      "id": 1,
+      "type": "official_documentation",
+      "title": "Royalti.io Help Centre",
+      "url": "https://royalti.io/help",
+      "author": "Royalti.io",
+      "publishedDate": null,
+      "accessedDate": "2026-08-23",
+      "toolUsed": "curl + WebFetch",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Landing",
+          "content": "Eight categories; 46 articles at time of access",
+          "relevance": "The corpus this router maps."
+        }
+      ],
+      "usedInSections": [
+        "Route by task"
+      ],
+      "notes": "Two categories (roster-management, addon) render with zero articles."
+    },
+    {
+      "id": 2,
+      "type": "official_documentation",
+      "title": "Royalti.io",
+      "url": "https://royalti.io",
+      "author": "Royalti.io",
+      "publishedDate": null,
+      "accessedDate": "2026-08-23",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Orientation"
+      ],
+      "notes": "Source for the site entry points. Note royalti.io/docs 404s; developer docs are at /developers."
+    },
+    {
+      "id": 3,
+      "type": "official_documentation",
+      "title": "Royalti.io Help \u2014 Glossary of Terms",
+      "url": "https://royalti.io/help/glossary-of-terms",
+      "author": "Royalti.io",
+      "publishedDate": null,
+      "accessedDate": "2026-08-23",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Glossary",
+          "content": "Asset = an audio or video track; Product (also called Release) = made up of at least one asset",
+          "relevance": "Source for the three orientation terms."
+        }
+      ],
+      "usedInSections": [
+        "Orientation"
+      ],
+      "notes": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "section": "Orientation",
+      "claim": "In Royalti, an asset is an individual track; a product (also called a release) is made up of at least one asset; a split defines how royalties divide between collaborators on a track.",
+      "sourceId": 3,
+      "locator": "Glossary of Terms; Catalog article; Split Management article",
+      "verifiedOn": "2026-08-23",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c2",
+      "section": "Route by task",
+      "claim": "The Royalti help centre published 46 articles across eight categories on 2026-08-23, and every article linked here resolves.",
+      "sourceId": 1,
+      "locator": "Category pages; per-article HTTP check",
+      "verifiedOn": "2026-08-23",
+      "verdict": "confirmed",
+      "verificationNote": "Per-category counts matched the help centre's own displayed counts exactly (3/30/7/1/1/4/0/0). All 46 article URLs returned HTTP 200."
+    },
+    {
+      "id": "c3",
+      "section": "Coverage and limits",
+      "claim": "This skill makes no assertion about how any Royalti feature behaves.",
+      "sourceId": null,
+      "locator": "By construction \u2014 the body contains only article titles and links",
+      "verifiedOn": "2026-08-23",
+      "verdict": "confirmed",
+      "verificationNote": "Deliberate: a product router that restates behaviour goes stale against the product. Links do not."
+    }
+  ],
+  "routing": {
+    "totalArticles": 46,
+    "allResolved": true,
+    "checkedOn": "2026-08-23",
+    "titleProvenance": {
+      "from-title-tag": 38,
+      "derived-from-url-slug": 8
+    },
+    "articles": [
+      {
+        "title": "Accounting Management in Royalti.io",
+        "url": "https://royalti.io/help/accounting-management-in-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Activating and Managing the Releases Feature - The Admin",
+        "url": "https://royalti.io/help/activating-and-managing-the-releases-feature-the-admin",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Activating and Managing the Releases Feature - The User Guide",
+        "url": "https://royalti.io/help/activating-and-managing-the-releases-feature-the-user-guide",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Adding Financial Transactions in Royalti.io: New Payment, New Expense, New Revenue",
+        "url": "https://royalti.io/help/adding-financial-transactions-in-royaltiio-new-payment-new-expense-new-revenue",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Artist Management",
+        "url": "https://royalti.io/help/artist-management",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Ask Roy Capabilities - Queries, Actions & Workflows",
+        "url": "https://royalti.io/help/ask-roy-capabilities",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "25 Example Questions for Ask Roy",
+        "url": "https://royalti.io/help/ask-roy-example-questions",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Ask Roy your AI Assistant",
+        "url": "https://royalti.io/help/ask-roy-your-ai-assistant",
+        "titleSource": "slug"
+      },
+      {
+        "title": "Assets Management",
+        "url": "https://royalti.io/help/assets-management",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Bulk Import Assets from CSV",
+        "url": "https://royalti.io/help/bulk-import-assets-from-csv",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Bulk Import Products from CSV",
+        "url": "https://royalti.io/help/bulk-import-products-from-csv",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Catalog",
+        "url": "https://royalti.io/help/catalog",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Create a Product on Royalti.io",
+        "url": "https://royalti.io/help/create-a-product-on-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Create a User (Person) on Royalti.io",
+        "url": "https://royalti.io/help/create-a-user-person-on-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Create an Artist on Royalti.io",
+        "url": "https://royalti.io/help/create-an-artist-on-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Creating an Asset on Royalti.io",
+        "url": "https://royalti.io/help/creating-an-asset-on-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Delivering to Stores with DDEX FUGA",
+        "url": "https://royalti.io/help/delivering-to-stores-with-ddex--fuga",
+        "titleSource": "slug"
+      },
+      {
+        "title": "Download and Send Royalty Data",
+        "url": "https://royalti.io/help/download-and-send-royalty-data",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Frequently Asked Questions",
+        "url": "https://royalti.io/help/frequently-asked-questions",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "\ud83d\ude80 Getting Started with Royalti.io",
+        "url": "https://royalti.io/help/getting-started-with-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Glossary of Terms",
+        "url": "https://royalti.io/help/glossary-of-terms",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "How to Download Metadata for Products on Royalti.io",
+        "url": "https://royalti.io/help/how-to-download-metadata-for-products-on-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "How to Import Royalty Data",
+        "url": "https://royalti.io/help/how-to-import-royalty-data",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "How to Use Ask Roy - Royalti AI Assistant Guide",
+        "url": "https://royalti.io/help/how-to-use-ask-roy-royaltis-ai-assistant",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "How to Use Magic-Link Authentication on Account",
+        "url": "https://royalti.io/help/how-to-use-magic-link-authentication-on-account",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Import Catalog from DSPs",
+        "url": "https://royalti.io/help/import-catalog-from-dsps",
+        "titleSource": "slug"
+      },
+      {
+        "title": "Managing Payment Items in Royalti.io",
+        "url": "https://royalti.io/help/managing-payment-items-in-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Managing Revenue in Royalti.io",
+        "url": "https://royalti.io/help/managing-revenue-in-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Managing Royalty Sources",
+        "url": "https://royalti.io/help/managing-royalty-sources",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Managing Wallets and Beneficiaries with Verto on Royalti.io",
+        "url": "https://royalti.io/help/managing-wallets-and-beneficiaries-with-verto-on-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Payment Method Management",
+        "url": "https://royalti.io/help/payment-method-management",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Product Management",
+        "url": "https://royalti.io/help/product-management",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Publishing and CWR Guide",
+        "url": "https://royalti.io/help/publishing-and-cwr-guide",
+        "titleSource": "slug"
+      },
+      {
+        "title": "Royalti.io Notification System",
+        "url": "https://royalti.io/help/royaltiio-notification-system",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Royalty Processing and Exchange Rates",
+        "url": "https://royalti.io/help/royalty-processing-and-exchange-rates",
+        "titleSource": "slug"
+      },
+      {
+        "title": "Setting Up the Royalti MCP Server",
+        "url": "https://royalti.io/help/setting-up-the-royalti-mcp-server",
+        "titleSource": "slug"
+      },
+      {
+        "title": "Split Management",
+        "url": "https://royalti.io/help/split-management",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Time Based Splits Guide",
+        "url": "https://royalti.io/help/time-based-splits-guide",
+        "titleSource": "slug"
+      },
+      {
+        "title": "Understanding Royalti Analytics Reports",
+        "url": "https://royalti.io/help/understanding-royalti-analytics--reports",
+        "titleSource": "slug"
+      },
+      {
+        "title": "Untitled article",
+        "url": "https://royalti.io/help/untitled-article",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Updating My Workspace Settings on Royalti.io",
+        "url": "https://royalti.io/help/updating-my-workspace-settings-on-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Use the Merge Artist Functionality on Royalti.io",
+        "url": "https://royalti.io/help/use-the-merge-artist-functionality-on-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "User Management",
+        "url": "https://royalti.io/help/user-management",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Using the Checklist Page",
+        "url": "https://royalti.io/help/using-the-checklist-page",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Using the Distro Addon in Royalti.io",
+        "url": "https://royalti.io/help/using-the-distro-addon-in-royaltiio",
+        "titleSource": "title-tag"
+      },
+      {
+        "title": "Welcome to Royalti.io",
+        "url": "https://royalti.io/help/welcome-to-royaltiio",
+        "titleSource": "title-tag"
+      }
+    ]
+  },
+  "sourceTypes": {
+    "official_documentation": "Operator-published documentation"
+  },
+  "confidenceLevels": {
+    "high": "Operator-published documentation for its own product"
+  },
+  "checkStatuses": {
+    "verified": "HTTP 200 on accessedDate"
+  },
+  "scopeGaps": [
+    {
+      "topic": "How any feature behaves",
+      "reason": "Deliberately not asserted. See claim c3."
+    },
+    {
+      "topic": "The REST API",
+      "reason": "Covered by the separate royalti-api skill."
+    },
+    {
+      "topic": "Anything not in the public help centre",
+      "reason": "Only publicly published articles are routed. Absence here is not a claim a feature does not exist."
+    }
+  ],
+  "upstreamDefectsObserved": [
+    {
+      "issue": "An article is published under the title 'Untitled article'",
+      "url": "https://royalti.io/help/untitled-article",
+      "note": "Reported as observed; not corrected here."
+    },
+    {
+      "issue": "Categories 'roster-management' and 'addon' render with zero articles",
+      "url": "https://royalti.io/help",
+      "note": "Observed 2026-08-23."
+    },
+    {
+      "issue": "https://royalti.io/docs returns 404",
+      "url": "https://royalti.io/docs",
+      "note": "Developer docs are at /developers. Fixed in the Royalti-io org profile README on 2026-08-23."
+    },
+    {
+      "issue": "Eight help pages do not set a server-side <title>",
+      "url": null,
+      "note": "Titles for those were derived from the URL slug; recorded per article in routing.articles[].titleSource."
+    }
+  ],
+  "verificationPass": {
+    "date": "2026-08-23",
+    "method": "Category counts cross-checked against the help centre's own displayed counts; every article URL individually HTTP-checked; titles taken from <title> where served and otherwise derived from the slug, recorded per article.",
+    "runBy": "Claude (Claude Code session)",
+    "independent": false,
+    "caveat": "Minimal claim surface by design \u2014 three structural claims, no assertions about product behaviour."
+  },
+  "summary": {
+    "totalSources": 3,
+    "totalClaims": 3,
+    "byVerdict": {
+      "confirmed": 3
+    }
+  }
+}
