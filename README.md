@@ -23,11 +23,12 @@ to publish and they are useless to us kept private.
 
 | Skill | What it covers | License |
 |---|---|---|
+| [`ddex-delivery`](skills/ddex-delivery/) | Problem router for DDEX delivery — 209 real failure modes mapped to the DDEX guidance article that answers each. | Apache-2.0 |
 | [`ddex-sources`](skills/ddex-sources/) | Primary-source index for music delivery — the ten DDEX standards, plus DSP, aggregator and regional-platform documentation. Link-checked. | Apache-2.0 |
 | [`cwr-registration`](skills/cwr-registration/) | Registering works with PROs via CWR — the MusicMark route to ASCAP, BMI and SOCAN: test phase, file naming, SFTP, acknowledgment codes, work IDs. | Apache-2.0 |
 | [`royalti-api`](https://github.com/Royalti-io/royalti-api-skill) | Royalti.io REST API v2.6 — auth, CRUD, pagination, webhooks, WebSocket events | MIT |
 
-_A fuller `ddex-delivery` skill is in preparation._
+_More skills as we find material we can cite. [Suggest one](https://github.com/Royalti-io/royalti-skills/issues)._
 
 **This catalog is mixed-license.** Skills in this repository are Apache-2.0. `royalti-api`
 lives in its own repository under MIT and is listed here rather than absorbed. The table above
@@ -59,6 +60,7 @@ The two paths do not cover the same entries, so pick by what you want:
 
 | | Plugin marketplace | `npx skills add` |
 |---|---|---|
+| `ddex-delivery` | ✅ | ✅ |
 | `ddex-sources` | ✅ | ✅ |
 | `cwr-registration` | ✅ | ✅ |
 | `royalti-api` | ✅ | ❌ — install it [from its own repo](https://github.com/Royalti-io/royalti-api-skill) |

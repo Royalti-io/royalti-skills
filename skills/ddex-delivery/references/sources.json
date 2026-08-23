@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0",
+  "skill": "ddex-delivery",
+  "lastUpdated": "2026-08-23",
+  "verifiedAgainstPrimarySources": "2026-08-23",
+  "researchedBy": "Royalti.io",
+  "sources": [
+    {
+      "id": 1,
+      "type": "ddex_kb",
+      "title": "DDEX \u2014 ERN implementation guidance and best practice (index)",
+      "url": "https://kb.ddex.net/implementing-each-standard/electronic-release-notification-message-suite-%28ern%29/ern-implementation-guidance-and-best-practice",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-23",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Index",
+          "content": "Guidance and best-practice articles for ERN, browsable by category",
+          "relevance": "The index this router is built from; every routed link is one of its entries."
+        }
+      ],
+      "usedInSections": [
+        "Route by symptom"
+      ],
+      "notes": "Sole structural source. The router reproduces titles and links from this index; it does not reproduce article content."
+    },
+    {
+      "id": 2,
+      "type": "ddex_kb",
+      "title": "DDEX Knowledge Base",
+      "url": "https://kb.ddex.net",
+      "author": "DDEX",
+      "publishedDate": null,
+      "accessedDate": "2026-08-23",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [],
+      "usedInSections": [
+        "Sources"
+      ],
+      "notes": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "section": "Route by symptom",
+      "claim": "DDEX publishes an ERN implementation-guidance index whose articles are grouped into the categories reproduced here.",
+      "sourceId": 1,
+      "locator": "Index page category structure and article links",
+      "verifiedOn": "2026-08-23",
+      "verdict": "confirmed",
+      "verificationNote": "Categories are taken from the KB's own URL hierarchy, not invented."
+    },
+    {
+      "id": "c2",
+      "section": "Coverage and limits",
+      "claim": "209 guidance articles across 11 problem areas are routed here, and every link in this skill returned HTTP 200 on 2026-08-23.",
+      "sourceId": 1,
+      "locator": "Link check of all 217 distinct URLs in SKILL.md",
+      "verifiedOn": "2026-08-23",
+      "verdict": "confirmed",
+      "verificationNote": "All 217 distinct kb.ddex.net URLs checked individually. Initial parallel checking produced false failures from rate limiting; re-run at lower concurrency with retries returned 200 for every URL."
+    },
+    {
+      "id": "c3",
+      "section": "What this is",
+      "claim": "This skill makes no assertion about the content of any routed article.",
+      "sourceId": null,
+      "locator": "By construction \u2014 the skill body contains only article titles and links",
+      "verifiedOn": "2026-08-23",
+      "verdict": "confirmed",
+      "verificationNote": "Deliberate design choice after a refutation pass on ddex-sources found 4 of 10 paraphrased standard descriptions materially wrong."
+    }
+  ],
+  "routing": {
+    "totalArticles": 209,
+    "areas": [
+      {
+        "area": "Deals, dates and territories",
+        "articles": 42
+      },
+      {
+        "area": "Release, resource and work metadata",
+        "articles": 53
+      },
+      {
+        "area": "Artists, contributors and writers",
+        "articles": 33
+      },
+      {
+        "area": "Identifiers, codes and dates",
+        "articles": 20
+      },
+      {
+        "area": "Messages, batches and choreography",
+        "articles": 13
+      },
+      {
+        "area": "XML issues",
+        "articles": 13
+      },
+      {
+        "area": "General guidance on messages",
+        "articles": 17
+      },
+      {
+        "area": "Flat-file issues (DSR, CDM, RDR-R)",
+        "articles": 8
+      },
+      {
+        "area": "Allowed value sets and code lists",
+        "articles": 6
+      },
+      {
+        "area": "Previews",
+        "articles": 2
+      },
+      {
+        "area": "Binaries",
+        "articles": 2
+      }
+    ],
+    "distinctUrlsChecked": 217,
+    "allResolved": true,
+    "checkedOn": "2026-08-23"
+  },
+  "sourceTypes": {
+    "ddex_kb": "DDEX Knowledge Base documentation"
+  },
+  "confidenceLevels": {
+    "high": "Official sources, standards bodies",
+    "medium": "Reputable industry publications",
+    "low": "Outdated or unverified"
+  },
+  "checkStatuses": {
+    "verified": "HTTP 200 to an automated check on accessedDate"
+  },
+  "scopeGaps": [
+    {
+      "topic": "Guidance for standards other than ERN (DSR, MWN, RDR, CDM, RIN, MWL, LOD, BWARM, MLC)",
+      "reason": "Present in the same DDEX index but out of scope for a delivery-focused router. ddex-sources routes to the standards themselves."
+    },
+    {
+      "topic": "What any routed article actually says",
+      "reason": "Deliberately not asserted. See claim c3."
+    }
+  ],
+  "verificationPass": {
+    "date": "2026-08-23",
+    "method": "Structural: every routed URL individually HTTP-checked; categories derived from the KB's own URL hierarchy rather than authored.",
+    "runBy": "Claude (Claude Code session)",
+    "independent": false,
+    "caveat": "Claude built this router and ran the link check. The claim surface is deliberately minimal \u2014 three structural claims, no assertions about article content \u2014 which is what makes a non-independent pass tolerable here in a way it was not for ddex-sources."
+  },
+  "summary": {
+    "totalSources": 2,
+    "totalClaims": 3,
+    "byVerdict": {
+      "confirmed": 3
+    }
+  }
+}

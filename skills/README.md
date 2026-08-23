@@ -51,12 +51,12 @@ sources we can point at cannot be published here under the accuracy gate, howeve
 
 ## Published
 
+- `ddex-delivery` — problem router: 209 delivery failure modes → the DDEX guidance article that answers each. Link-checked 2026-08-23.
 - `ddex-sources` — primary-source index for music delivery. Link-checked 2026-08-21.
 - `cwr-registration` — the MusicMark route to ASCAP, BMI and SOCAN. Verified 2026-08-21.
 
 ## In preparation
 
-- `ddex-delivery` — ERN message structure, release profiles, provider delivery requirements
-
-Not listed in the marketplace manifest yet. **A skill appears in the manifest when it has
+Nothing currently. Skills are added when there is material we can cite; see
+[`../ACCURACY-GATE.md`](../ACCURACY-GATE.md). **A skill appears in the manifest when it has
 passed both gates, not when its directory exists.**

@@ -10,6 +10,30 @@
   },
   "plugins": [
     {
+      "name": "ddex-delivery",
+      "description": "Problem-to-guidance router for DDEX delivery \u2014 maps 209 real delivery problems (dropped deals, territorial takedowns, malformed identifiers, miscredited artists, parse failures) to the exact DDEX knowledge-base article that answers each.",
+      "category": "music-industry",
+      "keywords": [
+        "ddex",
+        "ern",
+        "delivery",
+        "dsp",
+        "metadata",
+        "deals",
+        "territories",
+        "isrc",
+        "xml"
+      ],
+      "license": "Apache-2.0",
+      "author": "Royalti.io",
+      "homepage": "https://github.com/Royalti-io/royalti-skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ddex-delivery"
+      ]
+    },
+    {
       "name": "ddex-sources",
       "description": "Curated, link-checked index of primary sources for music delivery \u2014 the ten DDEX standards plus official metadata and onboarding documentation for major DSPs, aggregators and regional platforms.",
       "category": "music-industry",
