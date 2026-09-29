@@ -105,6 +105,28 @@
       ]
     },
     {
+      "name": "syynk-blender-lyrics",
+      "description": "Turn a Syynk.to lyrics JSON export into 3D lyric text in Blender, lit word by word as it is sung \u2014 with the script that builds the scene, previews frames, renders, and saves a .blend in sync with the song.",
+      "category": "music-industry",
+      "keywords": [
+        "syynk",
+        "blender",
+        "lyrics",
+        "lyric video",
+        "3d text",
+        "karaoke",
+        "timing"
+      ],
+      "license": "Apache-2.0",
+      "author": "Royalti.io",
+      "homepage": "https://github.com/Royalti-io/royalti-skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/syynk-blender-lyrics"
+      ]
+    },
+    {
       "name": "royalti-api",
       "description": "Royalti.io REST API v2.6 developer reference. Authentication, CRUD patterns, pagination, error handling, webhooks, WebSocket events, and data models.",
       "category": "music-industry",

@@ -1,0 +1,493 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0",
+  "skill": "syynk-blender-lyrics",
+  "lastUpdated": "2026-09-29",
+  "verifiedAgainstPrimarySources": "2026-09-29",
+  "researchedBy": "Royalti.io",
+  "sources": [
+    {
+      "id": 1,
+      "type": "bundled_code",
+      "title": "scripts/syynk_blender_lyrics.py (this skill)",
+      "url": "scripts/syynk_blender_lyrics.py",
+      "author": "Syynk.to (Royalti.io)",
+      "publishedDate": "2026-09-28",
+      "accessedDate": "2026-09-29",
+      "toolUsed": "Read",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": "scripts/syynk_blender_lyrics.py",
+      "keyExcerpts": [
+        {
+          "section": "load_lines()",
+          "content": "segments = data[\"segments\"]; skips a segment when kind not in (\"lyric\", \"backing\") or it has no words; reads word, startTime, endTime; exits with 'No timed words found. Export the JSON from Syynk with word timing included.'",
+          "relevance": "What the script reads from the export and when it stops."
+        },
+        {
+          "section": "new_scene()",
+          "content": "sc.view_settings.view_transform = \"Standard\"; film_transparent + RGBA when TRANSPARENT",
+          "relevance": "The view transform and transparency the script sets."
+        },
+        {
+          "section": "main()",
+          "content": "--still writes f\"{base}_{int(f):05d}.png\"; --render renders the animation to <DIR>/frame_; --save adds the audio as a sound strip and sets sync_mode AUDIO_SYNC",
+          "relevance": "What each mode produces."
+        }
+      ],
+      "usedInSections": [
+        "Check the export",
+        "Set it up",
+        "Preview before rendering",
+        "Save or render",
+        "Messages the script prints"
+      ],
+      "notes": "The script is the primary source for its own behaviour. It is byte-identical to https://syynk.to/downloads/syynk_blender_lyrics.py as of accessedDate (diffed)."
+    },
+    {
+      "id": 2,
+      "type": "official_documentation",
+      "title": "Blender 5.2 LTS Manual — Command Line Arguments",
+      "url": "https://docs.blender.org/manual/en/latest/advanced/command_line/arguments.html",
+      "author": "Blender Foundation",
+      "publishedDate": null,
+      "accessedDate": "2026-09-29",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Render Options: -b, --background",
+          "content": "Run in background (often used for UI-less rendering).",
+          "relevance": "-b"
+        },
+        {
+          "section": "Misc Options: --factory-startup",
+          "content": "Skip reading the startup.blend in the users home directory.",
+          "relevance": "--factory-startup"
+        },
+        {
+          "section": "Python Options: -P, --python <filepath>",
+          "content": "Run the given Python script file.",
+          "relevance": "--python"
+        },
+        {
+          "section": "Misc Options: --",
+          "content": "End option processing, following arguments passed unchanged. Access via Python's sys.argv.",
+          "relevance": "Arguments after --"
+        }
+      ],
+      "usedInSections": [
+        "Preview before rendering"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "type": "official_documentation",
+      "title": "Blender 5.2 LTS Manual — Color Management › Color Spaces",
+      "url": "https://docs.blender.org/manual/en/latest/render/color_management/color_spaces.html",
+      "author": "Blender Foundation",
+      "publishedDate": null,
+      "accessedDate": "2026-09-29",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Introduction",
+          "content": "Blender primarily works with scene linear colors for materials, lighting, geometry and compositing.",
+          "relevance": "Why hex colours are converted to linear."
+        },
+        {
+          "section": "Working Space",
+          "content": "The default is Linear Rec.709",
+          "relevance": "The working space the script's sRGB-to-linear conversion targets."
+        }
+      ],
+      "usedInSections": [
+        "Set it up"
+      ],
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "type": "official_documentation",
+      "title": "Blender 5.2 LTS Manual — Color Management › Displays & Views",
+      "url": "https://docs.blender.org/manual/en/latest/render/color_management/displays_views.html",
+      "author": "Blender Foundation",
+      "publishedDate": null,
+      "accessedDate": "2026-09-29",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Views: Standard",
+          "content": "Does no extra conversion besides the conversion for the display.",
+          "relevance": "The view transform the script sets."
+        },
+        {
+          "section": "Views: AgX",
+          "content": "A tone mapping transform that improves on Filmic ... desaturates highly exposed colors",
+          "relevance": "AgX is a tone-mapping transform. The tan result is a test observation and is not attributed to this sentence."
+        }
+      ],
+      "usedInSections": [
+        "Set it up"
+      ],
+      "notes": "The page does not say which view transform is the default; that is reported in SKILL.md as a test observation, not cited."
+    },
+    {
+      "id": 5,
+      "type": "operator_documentation",
+      "title": "Syynk.to — Put your lyrics in 3D with Blender",
+      "url": "https://syynk.to/docs/guides/blender-lyrics",
+      "author": "Syynk.to (Royalti.io)",
+      "publishedDate": "2026-09-28",
+      "accessedDate": "2026-09-29",
+      "toolUsed": "curl",
+      "confidence": "high",
+      "checkStatus": "verified",
+      "localCopy": null,
+      "keyExcerpts": [
+        {
+          "section": "Export the lyrics as JSON, step 3",
+          "content": "Tick Include word-level timing. It's off by default, and the script needs it.",
+          "relevance": "The export option and its default."
+        }
+      ],
+      "usedInSections": [
+        "Check the export"
+      ],
+      "notes": "The operator's own documentation of its export dialog (rank 2)."
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "section": "Scope",
+      "claim": "The same file is downloadable from syynk.to/downloads/syynk_blender_lyrics.py.",
+      "sourceId": 1,
+      "locator": "Byte comparison of scripts/syynk_blender_lyrics.py with the live download, 2026-09-29",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c2",
+      "section": "Check the export",
+      "claim": "The script reads the export's segments list and draws a segment when its kind is lyric or backing (a missing kind counts as lyric) and its words list is not empty.",
+      "sourceId": 1,
+      "locator": "load_lines(), lines 61-66",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c3",
+      "section": "Check the export",
+      "claim": "It reads each drawn segment's startTime and endTime and each word's word, startTime and endTime, in seconds; segments of any other kind are skipped.",
+      "sourceId": 1,
+      "locator": "load_lines(), lines 63-69; frame() line 56 multiplies seconds by FPS",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c4",
+      "section": "Check the export",
+      "claim": "If no lyric or backing segment has words, the script stops with 'No timed words found. Export the JSON from Syynk with word timing included.'",
+      "sourceId": 1,
+      "locator": "load_lines(), lines 70-71",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c5",
+      "section": "Check the export",
+      "claim": "Word-level timing is an option when exporting JSON from Syynk's LyricSync editor, and it is off by default.",
+      "sourceId": 5,
+      "locator": "Export the lyrics as JSON, steps 1-3",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c6",
+      "section": "Set it up",
+      "claim": "The settings block sits between '# --- Settings' and '# --- End of settings', holding FONT, LEAD_COLOR (#F4EFE6), BACKING_COLOR (#F2C14E), BACKGROUND, TRANSPARENT, UNSUNG_LEVEL, LINE_WIDTH, TEXT_SIZE, DEPTH, FPS, WIDTH/HEIGHT, FADE_FRAMES and ENGINE with the meanings listed.",
+      "sourceId": 1,
+      "locator": "lines 27-43, with each setting's inline comment; WIDTH/HEIGHT used as render resolution in pixels at line 83",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c7",
+      "section": "Set it up",
+      "claim": "Blender primarily works with scene-linear colours for materials.",
+      "sourceId": 3,
+      "locator": "Introduction",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c8",
+      "section": "Set it up",
+      "claim": "The script converts each six-digit hex colour from sRGB to linear itself.",
+      "sourceId": 1,
+      "locator": "linear(), lines 51-52 (sRGB transfer function; parses #RRGGBB only)",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c9",
+      "section": "Set it up",
+      "claim": "The script sets the scene's view transform to Standard, which does no extra conversion besides the one for the display.",
+      "sourceId": 4,
+      "locator": "Views: Standard; script line 87",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c10",
+      "section": "Set it up",
+      "claim": "AgX is a tone-mapping transform.",
+      "sourceId": 4,
+      "locator": "Views: AgX ('A tone mapping transform that improves on Filmic')",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c11",
+      "section": "Preview before rendering",
+      "claim": "-b runs Blender in the background, which is often used for rendering without the interface.",
+      "sourceId": 2,
+      "locator": "-b, --background",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c12",
+      "section": "Preview before rendering",
+      "claim": "--factory-startup skips reading the user's startup.blend.",
+      "sourceId": 2,
+      "locator": "--factory-startup",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c13",
+      "section": "Preview before rendering",
+      "claim": "--python runs a script file.",
+      "sourceId": 2,
+      "locator": "-P, --python <filepath>",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c14",
+      "section": "Preview before rendering",
+      "claim": "Blender stops processing options at -- and leaves the arguments after it unchanged in Python's sys.argv; the script reads what follows the --.",
+      "sourceId": 2,
+      "locator": "Manual, Misc Options: '--'; script line 239 (sys.argv[sys.argv.index('--') + 1:])",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c15",
+      "section": "Preview before rendering",
+      "claim": "--still renders the listed frames to PNG files next to the JSON, named after the JSON file with the frame number padded to five digits.",
+      "sourceId": 1,
+      "locator": "main(), lines 214-222 (base = os.path.splitext(json_path)[0]); PNG format set in new_scene() line 88",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c16",
+      "section": "Save or render",
+      "claim": "--save saves a .blend; when the song file is given as the second argument, it puts the song on the timeline, linked by its full path, and sets playback to sync to the audio. The timeline ends one second after the last line.",
+      "sourceId": 1,
+      "locator": "main(), lines 228-235 (if audio: strips.new_sound with os.path.abspath(audio); sync_mode = AUDIO_SYNC); build() line 199 (frame_end = last line end + FPS); usage docstring line 13",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c17",
+      "section": "Save or render",
+      "claim": "--render writes a numbered PNG sequence.",
+      "sourceId": 1,
+      "locator": "main(), lines 223-226 (filepath <DIR>/frame_, render animation)",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c18",
+      "section": "Messages the script prints",
+      "claim": "The script prints 'Can't find <path>. Run this from the folder that holds it, or give its full path.' when the JSON or song file passed to it does not exist, and 'Built N lines (M words), frames A-B at FPS fps.' once the scene is built, before any render or save.",
+      "sourceId": 1,
+      "locator": "main() lines 210-212; build() lines 200-201",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c19",
+      "section": "Set it up",
+      "claim": "The working space defaults to Linear Rec.709.",
+      "sourceId": 3,
+      "locator": "Working Space: 'The default is Linear Rec.709'",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c20",
+      "section": "Set it up",
+      "claim": "The script applies the sRGB-to-linear transfer function to each hex colour and starts from factory settings without changing the working space.",
+      "sourceId": 1,
+      "locator": "linear(), lines 49-52; new_scene() line 76 (read_factory_settings); no working-space assignment anywhere in the script",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c21",
+      "section": "What this covers",
+      "claim": "Every word is extruded 3D text; a line appears dim and each word lights as it is sung; each line fades at its own end; backing-vocal lines sit underneath, smaller, in their own colour.",
+      "sourceId": 1,
+      "locator": "build_line(): extrude line 146; dim/full Base Color keys lines 173-177; Alpha fade line 180; backing size lines 159-160, z offset line 161, colour line 139",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c22",
+      "section": "What it does not cover",
+      "claim": "The script does not re-time the export; it rounds times to whole frames and adds short fades around each line.",
+      "sourceId": 1,
+      "locator": "load_lines() lines 68-69 read times unchanged; frame() line 56 rounds to whole frames; build_line() lines 171-182 add FADE_FRAMES fades and a 3-frame light-up",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c23",
+      "section": "Set it up",
+      "claim": "The camera does not move and faces the text.",
+      "sourceId": 1,
+      "locator": "add_camera_and_light(): fixed location line 106 and rotation line 107; no keyframes are set on the camera",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c24",
+      "section": "Preview before rendering",
+      "claim": "The scene starts at frame 0, so a frame number is seconds × FPS.",
+      "sourceId": 1,
+      "locator": "build() line 198 (frame_start = 0); frame() line 56",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c25",
+      "section": "Preview before rendering / Save or render",
+      "claim": "The command lines take the form blender -b --factory-startup --python syynk_blender_lyrics.py -- <json> [song] [--still F ...] [--render DIR] [--save FILE]; the modes can be combined in one run, and the song is used only by --save.",
+      "sourceId": 1,
+      "locator": "usage docstring lines 9-15; main() checks --still, --render and --save independently at lines 215, 223 and 228; the song is used only at line 231",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    },
+    {
+      "id": "c26",
+      "section": "Set it up",
+      "claim": "None of the settings move or aim the camera, or add a set.",
+      "sourceId": 1,
+      "locator": "settings block lines 27-43 (no camera position, lens, motion or scene-geometry settings; CAMERA_DISTANCE, LENS and SENSOR sit outside the block at lines 45-46); camera fixed in add_camera_and_light() lines 104-107",
+      "verifiedOn": "2026-09-29",
+      "verdict": "confirmed"
+    }
+  ],
+  "observations": [
+    {
+      "section": "Set it up",
+      "text": "In our test, with Blender 5.2's factory settings, the view transform was AgX, and a requested gold (#F2C14E) rendered as a muted tan.",
+      "basis": "Render on 2026-09-28: sampled (199,169,111) under AgX vs (247,197,81) under Standard.",
+      "cited": false
+    },
+    {
+      "section": "Save or render",
+      "text": "In our test, EEVEE took about 2 seconds a frame on an RTX 2070 Max-Q laptop GPU. The three-hours-for-three-minutes figure is an extrapolation, stated in SKILL.md as an estimate.",
+      "basis": "916-frame render, 33 minutes including ~2 minutes of setup, 2026-09-28.",
+      "cited": false
+    }
+  ],
+  "sourceTypes": {
+    "bundled_code": "The code this skill ships; primary source for its own behaviour",
+    "official_documentation": "Official documentation of the software in question",
+    "operator_documentation": "The operating organisation's own published documentation"
+  },
+  "confidenceLevels": {
+    "high": "Official sources, operator-published documentation, the bundled code itself",
+    "medium": "Reputable secondary publications",
+    "low": "Outdated documentation (>2 years) or unverified sources"
+  },
+  "checkStatuses": {
+    "verified": "HTTP 200 to an automated check on accessedDate (or read locally, for bundled code)"
+  },
+  "scopeGaps": [
+    {
+      "topic": "Which Blender view transform is the default",
+      "reason": "The manual's Displays & Views page does not state a default. Reported as a test observation, not as a claim."
+    },
+    {
+      "topic": "Frame rate of numbered image sequences in video editors",
+      "reason": "Observed in DaVinci Resolve (image sequences take the project frame rate) but not cited to Blackmagic documentation, so cut under cite-or-cut, including the settings-table advice that depended on it. The FPS row now says only to match the video being made."
+    },
+    {
+      "topic": "Minimum Blender version",
+      "reason": "Tested on Blender 5.2 only; no minimum version is claimed."
+    }
+  ],
+  "verificationPass": {
+    "date": "2026-09-29",
+    "method": "Three adversarial rounds. Each claim was given, with its cited source, to a separate verifier agent that had no access to the drafting rationale and was told to refute it and to count uncertainty as refuted. Web sources were fetched with curl and read as text; the bundled script was read line by line; c1 was checked by byte comparison with the live download. Round 1 (all 18 claims): 7 confirmed, 11 refuted. Round 2 (the 12 revised or new claims): 9 confirmed, 3 refuted. Round 3 (the 6 rewritten or new claims plus 4 flagged sentences): 5 confirmed, 1 refuted, 2 sentences tightened. Every refutation was fixed by narrowing the claim to what the source says, correcting a locator, or cutting; the final wording of each claim is the one that survived.",
+    "runBy": "Claude (Claude Code session): opus-tier verifier agents, separate from the drafting agent",
+    "independent": true,
+    "caveat": "The verifiers were separate agent instances from the drafter, but the same underlying model, so their independence is procedural, not organisational. The round-3 fixes to c25 and c26 (and the two sentences) were applied from the verifier's own suggested wording and were not re-verified in a fourth round. Human reviewer sign-off is recorded in the pull request.",
+    "rounds": [
+      {
+        "round": 1,
+        "claims": 18,
+        "confirmed": 7,
+        "refuted": 11,
+        "unverifiable": 0
+      },
+      {
+        "round": 2,
+        "claims": 12,
+        "confirmed": 9,
+        "refuted": 3,
+        "unverifiable": 0
+      },
+      {
+        "round": 3,
+        "claims": 6,
+        "confirmed": 5,
+        "refuted": 1,
+        "unverifiable": 0
+      }
+    ]
+  },
+  "summary": {
+    "normativeClaims": 26,
+    "citedToPrimarySource": 26,
+    "cutUnderCiteOrCut": 3,
+    "observationsAttributed": 2
+  },
+  "signOff": {
+    "reviewer": "Chinedum Okerengwor",
+    "role": "Founder, Royalti.io",
+    "date": "2026-09-29",
+    "scrubChecklist": "PASS",
+    "accuracyGate": "PASS",
+    "basis": "Sign-off given in a Claude Code session on the recorded verification pass and the per-claim provenance in this file, as summarised to the reviewer; the reviewer instructed Claude to record it.",
+    "notedLimitation": "The verifiers were separate agent instances from the drafter but the same underlying model, so independence is procedural. The round-3 fixes to c25 and c26 were applied from the verifier's own wording and not re-verified. The Claude Code plugin-marketplace install path was not install-tested (no claude CLI on the machine); `npx skills add` was.",
+    "scrubNote": "4 marker hits, all references to the skill's own bundled scripts/ path (public by design); rules 1-4 read clean.",
+    "accuracyNote": "26 claims each traced to a located source section; 3 topics cut under cite-or-cut and recorded as scope gaps; 2 test observations attributed as such."
+  }
+}

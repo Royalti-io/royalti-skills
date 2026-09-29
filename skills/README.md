@@ -55,6 +55,7 @@ sources we can point at cannot be published here under the accuracy gate, howeve
 - `ddex-delivery` — problem router: 209 delivery failure modes → the DDEX guidance article that answers each. Link-checked 2026-08-23.
 - `ddex-sources` — primary-source index for music delivery. Link-checked 2026-08-21.
 - `cwr-registration` — the MusicMark route to ASCAP, BMI and SOCAN. Verified 2026-08-21.
+- `syynk-blender-lyrics` — Syynk.to lyrics JSON → 3D lyric text in Blender, with its script. Verified 2026-09-29.
 
 ## In preparation
 
