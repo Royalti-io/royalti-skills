@@ -27,6 +27,7 @@ to publish and they are useless to us kept private.
 | [`ddex-delivery`](skills/ddex-delivery/) | Problem router for DDEX delivery — 209 real failure modes mapped to the DDEX guidance article that answers each. | Apache-2.0 |
 | [`ddex-sources`](skills/ddex-sources/) | Primary-source index for music delivery — the ten DDEX standards, plus DSP, aggregator and regional-platform documentation. Link-checked. | Apache-2.0 |
 | [`cwr-registration`](skills/cwr-registration/) | Registering works with PROs via CWR — the MusicMark route to ASCAP, BMI and SOCAN: test phase, file naming, SFTP, acknowledgment codes, work IDs. | Apache-2.0 |
+| [`syynk-blender-lyrics`](skills/syynk-blender-lyrics/) | Turn a [Syynk.to](https://syynk.to) lyrics JSON export into 3D lyric text in Blender, lit word by word — with the script that builds, previews and renders it. | Apache-2.0 |
 | [`royalti-api`](https://github.com/Royalti-io/royalti-api-skill) | Royalti.io REST API v2.6 — auth, CRUD, pagination, webhooks, WebSocket events | MIT |
 
 _More skills as we find material we can cite. [Suggest one](https://github.com/Royalti-io/royalti-skills/issues)._
@@ -65,6 +66,7 @@ The two paths do not cover the same entries, so pick by what you want:
 | `ddex-delivery` | ✅ | ✅ |
 | `ddex-sources` | ✅ | ✅ |
 | `cwr-registration` | ✅ | ✅ |
+| `syynk-blender-lyrics` | ✅ | ✅ |
 | `royalti-api` | ✅ | ❌ — install it [from its own repo](https://github.com/Royalti-io/royalti-api-skill) |
 
 `royalti-api` lives in a separate repository. The marketplace manifest can point at it; the
