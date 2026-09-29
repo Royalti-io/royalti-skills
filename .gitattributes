@@ -1,0 +1,5 @@
+# The scrub scan is bash. With core.autocrlf=true, a Windows checkout would give
+# its script and pattern file CRLF line endings, and a trailing \r turns blank
+# pattern lines into patterns that match every line. Keep them LF everywhere.
+scripts/** text eol=lf
+*.sh text eol=lf
