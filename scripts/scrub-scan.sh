@@ -30,6 +30,9 @@ total=0
 section=""
 
 while IFS= read -r line; do
+  # A CRLF pattern file (e.g. a Windows checkout) leaves a trailing \r, which
+  # turns every blank line into a pattern that matches everything.
+  line="${line%$'\r'}"
   # Section headers become report headings
   if [[ "$line" =~ ^#[[:space:]]*──.*·[[:space:]]*(.*)[[:space:]]*── ]]; then
     section="${BASH_REMATCH[1]}"
